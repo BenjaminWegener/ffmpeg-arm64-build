@@ -51,7 +51,7 @@ git clone https://github.com/BenjaminWegener/ffmpeg-arm64-build
 cd ffmpeg-arm64-build
 mkdir ffmpeg-build
 cd ffmpeg-build
-../build.sh
+../build.sh skip
 This now has an optional parameter, either skip or clean.
 This is used for re-runs of the script and it will either skip previously built codecs
 or recompile existing codecs. Note it using this options ffmpeg is always recomiled afterwards.
