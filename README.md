@@ -73,3 +73,5 @@ The ffmpeg-success.zip contains also all binary files for FFmpeg.
 Check the detailed logfiles in the working directory. Each build step has its own file starting with "build-*".
 
 If the build of ffmpeg failes during the configuration phase (e.g. because it doesn't find one codec) check also the log file in ffmpeg/ffmpeg-*/ffbuild/config.log.
+
+If your linux has `dash` instead of `bash` (check with `readlink -f $(which sh)`): change using `sudo ln -sf /bin/sh /usr/bin/bash`.
