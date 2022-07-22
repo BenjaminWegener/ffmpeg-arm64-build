@@ -1,15 +1,15 @@
 # FFmpeg
-This script is made to compile FFmpeg with common codecs on Mac OSX running on Apple Silicon.
+This script is made to compile FFmpeg with common codecs for linux/arm64.
 The script was orginally taken from https://gitlab.com/martinr92/ffmpeg and has been modifed to build
-the libraries with ARM64/NEON code were applicable.
+the libraries with ARM64/NEON code were applicable. Based on work by https://github.com/Vargol/ffmpeg-apple-arm64-build
 
-The version of x265 also includes the Apple provided patch used by Handbreak, 
+The version of x265 also includes the Apple provided patch used by Handbrake, 
 https://github.com/HandBrake/HandBrake/blob/master/contrib/x265/A01-darwin-neon-support-for-arm64.patch
 forward ported to apply to newer versions of x265 this is not in the main line code but runs significantly faster.
 This version also correctly reports that ARM64 is 64 bit not 32 bit :-)
 
 ## Result
-This repository builds FFmpeg and FFprobe for Mac OSX using
+This repository builds FFmpeg and FFprobe linux/arm64 using
 - build tools
     - [cmake](https://cmake.org/)
     - [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/)
@@ -35,12 +35,12 @@ To get a full list of all formats and codecs that are supported just execute
 There are just a few dependencies to other tools. Most of the software is compiled or downloaded during script execution. Also most of the tools should be already available on the system by default.
 
 ### Required
-- c and c++ compiler like AppleClang (included in Xcode) or gcc
+- c and c++ compiler like gcc
 - curl / git for downloading files
 - make
+- libopenssl-dev
 
-### Optional
-- sysctl (on Mac OSX) for multicore compilation
+
 
 ## Execution
 To run this script simply execute the build.sh script.
