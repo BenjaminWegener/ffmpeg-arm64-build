@@ -52,13 +52,14 @@ cd ffmpeg-arm64-build
 mkdir ffmpeg-build
 cd ffmpeg-build
 ../build.sh skip
+```
+
 This now has an optional parameter, either skip or clean.
 This is used for re-runs of the script and it will either skip previously built codecs
 or recompile existing codecs. Note it using this options ffmpeg is always recomiled afterwards.
 e.g. is you want to refresh just the aom codec, them delete the aom directory from the build folder, and run build.sh skip
 and it will skip all the exist folders and download and build libaom.
 
-```
 
 ## Folder Structure
 All files that are downloaded and generated through this script are placed in the current working directory. The recommendation is to use an empty folder for this.
