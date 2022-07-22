@@ -38,7 +38,7 @@ There are just a few dependencies to other tools. Most of the software is compil
 - c and c++ compiler like gcc
 - curl / git for downloading files
 - make
-- libopenssl-dev
+- libssl-dev
 - libc++-dev
 
 
@@ -46,7 +46,7 @@ There are just a few dependencies to other tools. Most of the software is compil
 ## Execution
 To run this script (e.g. on debian bulleye) simply execute the build.sh script.
 ```
-sudo apt install gcc make git curl libopenssl-dev libc++-dev
+sudo apt install gcc make git curl libssl-dev libc++-dev
 git clone https://github.com/BenjaminWegener/ffmpeg-arm64-build
 cd ffmpeg-arm64-build
 mkdir ffmpeg-build
