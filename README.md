@@ -39,6 +39,7 @@ There are just a few dependencies to other tools. Most of the software is compil
 - curl / git for downloading files
 - make
 - libopenssl-dev
+- libc++-dev
 
 
 
