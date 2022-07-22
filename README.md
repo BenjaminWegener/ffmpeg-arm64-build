@@ -4,7 +4,8 @@ The script was orginally taken from https://gitlab.com/martinr92/ffmpeg and has 
 the libraries with ARM64/NEON code were applicable. Based on work by https://github.com/Vargol/ffmpeg-apple-arm64-build
 
 The version of x265 also includes the Apple provided patch used by Handbrake, 
-https://github.com/HandBrake/HandBrake/blob/master/contrib/x265/A01-darwin-neon-support-for-arm64.patch
+https://github.com/HandBrake/HandBrake/tree/master/contrib/x265
+
 forward ported to apply to newer versions of x265 this is not in the main line code but runs significantly faster.
 This version also correctly reports that ARM64 is 64 bit not 32 bit :-)
 
