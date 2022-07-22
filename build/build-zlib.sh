@@ -70,7 +70,8 @@ make_compile () {
   make install
   checkStatus $? "installation of ${SOFTWARE} failed"
 
-  rm $3/lib/libz*.dylib
+  # arm64 has no dylib
+  # rm $3/lib/libz*.dylib
 }
 
 build_main () {
